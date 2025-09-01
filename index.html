@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Booking - Home</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav >
+    <h1 style="color: #fffacd;">Evento ✨</h1>
+
+   <div>
+      <a href="http://127.0.0.1:5500/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/gallery.html">Gallery</a>
+      <a href="http://127.0.0.1:5500/services.html">Services</a>
+      <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+       <a href="http://127.0.0.1:5500/about.html">About</a>
+      <a href="http://127.0.0.1:5500/Loginpage.html">Login</a>
+</div>
+
+  <div class="search-box" style="color: #fffacd;">
+    <input style="padding: 10px; border-radius: 5px;" type="text" placeholder="Search...">
+    <button style="background-color: #fffacd;">🔍</button>
+  </div>
+</nav>
+
+
+<!-- photos -->
+    <section>
+    <img id="slideshow" src="https://wallpapercave.com/wp/wp7488460.jpg" style="text-align: center; width: 100%;" alt="Event slideshow">
+<div class="slider">
+  
+
+<figure style="text-align: center;">
+  <img src="https://wallpapercave.com/wp/wp7488275.jpg" alt="Product" width="250">
+  <figcaption>
+    <p>Birthday</p>
+    <p><strong>Price: ₹1,00,000 </strong></p>
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+  <img src="https://watermark.lovepik.com/photo/20211120/large/lovepik-the-golden-wedding-stage-picture_500501082.jpg" alt="Product" width="250">
+  <figcaption>
+    <p>Ceremony</p>
+    <p><strong>Price: ₹1,20,000</strong></p>
+  </figcaption>
+</figure>
+  
+<figure style="text-align: center;">
+<img src="https://www.starseventdesign.com/wp-content/uploads/2015/07/Corporate-Events.jpg" alt="Product" width="250">
+  <figcaption>
+    <p>Bachloer</p>
+    <p><strong>Price: ₹90,000</strong></p>
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+<img src="https://wallpaperaccess.com/full/3732122.jpg" alt="Product" width="250">
+  <figcaption>
+    <p>Wedding</p>
+    <p><strong>Price: ₹2,00,000</strong></p>
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+<img src="https://chezeventvenue.com/content/uploads/2019/02/birthday-party-celebration.jpg" alt="Product" width="250">
+  <figcaption>
+    <p>Cocktail Party</p>
+    <p><strong>Price: ₹80,000</strong></p>
+  </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+<img src="https://png.pngtree.com/background/20250124/original/pngtree-new-event-management-outdoor-background-picture-image_15562724.jpg" alt="Product" width="250">
+  <figcaption>
+    <p>Dating</p>
+    <p><strong>Price: ₹30,000</strong></p>
+  </figcaption>
+</figure>
+
+  
+
+      <!-- Swipe -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Nav buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!--Video-->
+
+<div class="video" >
+<video src="https://www.pexels.com/download/video/4391110/" autoplay="autoplay" controls loop></video>
+</div>
+
+
+<br>
+<br>
+    <div class="last">
+      <h1 style="align-items: center; color: black; width: 100%; text-align: center;">Plan Events that People Remember 🎉</h1> <br><br>
+      <p style="align-items: center;">From weddings to corporate summits—book venues, services, and vendors in one place.</p>
+<br>
+<br>
+
+
+ <!-- Booking Form -->
+
+<form>
+  <!-- box -->
+  <div style="background:#5a475b; color: #fffacd; padding:15px; border-radius:8px; 
+              margin-bottom:20px; text-align:center; font-weight:bold;">
+    Booking Form
+  </div>
+
+  <label for="eventType" style="padding-left: 32px; color: white; ">Event Type</label>
+  <select id="eventType" style="  width: 400px;" required>
+    <option value="">Select…</option>
+    <option>Wedding</option>
+    <option>Birthday</option>
+    <option>Corporate</option>
+    <option>Concert</option>
+  </select>
+  <br><br>
+
+  <div class="box">
+    <label for="date" style="padding-left: 32px; color: black;">Date</label>
+    <input type="date" id="date" style= "padding:5px; border-radius: 5px; " required>
+    <br><br>
+
+    <label for="city" style="padding-left: 32px; color: black;">City</label>
+    <input id="city" placeholder="e.g., Mumbai" required>
+    <br><br>
+
+    <label for="guests" style="padding-left:32px; color: black;">Guests</label>
+    <input type="number" id="guests" min="1" placeholder="100" required>
+    <br><br>
+
+    <label for="notes" style="padding-left: 32px; color: black;">Notes</label>
+    <textarea id="notes" rows="3" placeholder="Any special requirements...."></textarea>
+    <br><br>
+
+    <button style="background-color: black; color: white; text-align: center; padding: 8px 20px; border: none; border-radius: 5px; margin-bottom: 30px;">
+      <a href="http://127.0.0.1:5500/services.html" style="color: white; text-decoration: none;">Submit</a>
+    </button>
+  </div>
+</form>
+    </div>
+  </section>
+
+  <!-- Services Available -->
+  <section style="background-color: #8c858c;">
+    <h2 style=" background-color: #aba0ab; color: rgb(0, 0, 0); border-radius: 2px; text-align: center;">Popular Services -</h2>
+    <div>
+      <div style="background-color: #bcb1bc;">
+        <h3 style="color: #fffacd; background-color: #454045;">Venue Booking</h3>
+        <p>Find and reserve top-rated venues with real-time availability.</p>
+      </div>
+      <div style="background-color: #bcb1bc;" >
+        <h3 style="color: #fffacd;  background-color: #454045;">Catering</h3>
+        <p>Delicious menus from curated partners for every budget.</p>
+      </div>
+      <div style="background-color: #bcb1bc;">
+        <h3 style="color: #fffacd;  background-color: #454045;">Decor & Lighting</h3>
+        <p>Beautiful themes, floral setups, and ambient lighting.</p>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Evento ✨</h3>
+      <p>Book and manage your events with ease.  
+      Your trusted event booking partner.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html#auth">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: support@evento.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Address: Indore, India</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <p>
+        <a href="#" class="social">🌐</a>
+        <a href="#" class="social">📘</a>
+        <a href="#" class="social">🐦</a>
+        <a href="#" class="social">📸</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Evento. All rights reserved.</p>
+    <p style="margin-top:5px; font-style:italic;">Signature / Authority: <b>Shraddha Gupta</b></p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

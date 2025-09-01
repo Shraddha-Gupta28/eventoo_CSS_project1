@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evento - Login & Register</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+    <div class="logo">Evento✨</div>
+    <ul class="nav-links">
+      <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+      <li><a href="http://127.0.0.1:5500/services.html">Services</a></li>
+      <li><a href="http://127.0.0.1:5500/contact.html" class="active">Contact</a></li>
+      <li><a href="http://127.0.0.1:5500/Loginpage.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <main>
+    <!-- Login -->
+    <div class="form-box active" id="login-box">
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+      </form>
+      <span class="toggle-link" onclick="toggleForm('register')">Don't have an account? Register</span>
+    </div>
+
+    <!-- Register -->
+    <div class="form-box" id="register-box">
+      <h2>Register</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Create password" required>
+        <input type="password" placeholder="Confirm password" required>
+        <button type="submit">Register</button>
+      </form>
+      <span class="toggle-link" onclick="toggleForm('login')">Already have an account? Login</span>
+    </div>
+
+    <!-- Logout -->
+    <div class="form-box" id="logout-box">
+      <h2>Logout</h2>
+      <p>You are successfully logged in 🎉</p>
+      <button onclick="toggleForm('login')">Logout</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">© 2025 Evento. All rights reserved.</footer>
+
+  <script>
+    function toggleForm(type) {
+      document.getElementById('login-box').classList.remove('active');
+      document.getElementById('register-box').classList.remove('active');
+      document.getElementById('logout-box').classList.remove('active');
+
+      if (type === 'login') {
+        document.getElementById('login-box').classList.add('active');
+      } else if (type === 'register') {
+        document.getElementById('register-box').classList.add('active');
+      } else if (type === 'logout') {
+        document.getElementById('logout-box').classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
